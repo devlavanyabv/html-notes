@@ -37,9 +37,139 @@
   <!--src - Specifies the path to the image-->
 <!--alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed-->
 <img src="img_girl.jpg" alt="girl in jacket" width="300px" height="200px">
+<hr>
+<!--tables in html -->
+<!--th stands for table header.-->
+<!--td stands for table data.-->
+<!--tr stands for table row.-->
+<table border="2">
+  <thead>
+  <tr>
+    <th>name</th>
+    <th>company</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>lavanya</td>
+    <td>google</td>
+  </tr>
+  <tr>
+    <td>mohan</td>
+    <td>google</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td>xyz</td>
+    <td>jp morgan</td>
+  </tr>
+  </tfoot>
+</table>
+<hr>
+<!--use of colspan and rowspan-->
+<!--To make a cell span over multiple columns, use the colspan attribute:-->
+<!--The value of the colspan attribute represents the number of columns to span.-->
+<!--To make a cell span over multiple rows, use the rowspan attribute:-->
+<!-- The value of the rowspan attribute represents the number of rows to span.-->
+<table border="2">
+  <thead>
+    <tr>
+    <th>Level1</th>
+    <th>Level2</th>
+    <th>Level3</th>
+    <th>Level4</th>
+    <th>Level5</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td rowspan="6">System</td>
+  <td rowspan="4">System apps</td>
+  <td rowspan="3">System env</td>
+  <td>App test</td>
+  <td rowspan="2">Foo</td>
+</tr>
+<tr>
+  <td>App memory</td>
+</tr>
+<tr>
+  <td>App test</td>
+  <td rowspan="2"> apple</td>
+</tr>
+<tr>
+  <td>system env2</td>
+  <td>app memory</td>
+</tr>
+<tr> 
+  <td rowspan="2" colspan="2">system memory</td>
+  <td>memory function</td>
+  <td> memory inflation</td>
+</tr>
+<tr> 
+  <td>apes test</td>
+  <td> apes check</td>
+</tr>
+</tbody>
+  </table>
+  <hr/>
+  <!--html forms-->
+  <form>
+    <!--Displays a single-line text input field-->
+    <input type="text"> <br><br>  <!--default width of an input field is 20 characters.-->
+    <!--Displays a radio button (for selecting one of many choices)-->
+    <input type="radio"> <br><br>
+    <!--	Displays a checkbox (for selecting zero or more of many choices)-->
+    <input type="checkbox"> <br><br>
+    <!--Displays a submit button (for submitting the form)-->
+    <input type="submit"> <br><br>
+    <!--Displays a clickable button-->
+    <input type="button"> <br><br>
+<hr>
+<!--The for attribute of <label> must be equal to the id attribute of the related element to bind them together-->
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname">
+<br><br>
+<label for="quantity">quantity</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5">
+<!--max - specifies the maximum value allowed  min - specifies the minimum value allowed-->
+<br><br>
+<label for="vehicle1">I have a bike</label>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+<br><br>
+<label for="html">HTML</label> 
+<input type="radio" id="html" name="fav_subject" value="html">
+<br><br>
+<!--placeholder attribute-->
+<!--The placeholder attribute specifies a short hint that describes the expected value of an input field-->
+<!--The placeholder attribute works with the following input types: text, search, url, number, tel, email, and password.-->
+<label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678">
+  <br><br>
+  <!--text area tag-->
+  <label for="address">mailing adress</label>
+  <textarea name="Adress" id="adress" rows="30" cols="30" ></textarea>
+  <br><br>
+  <!--select tag-->
+  <!--option tag-->
+  <label for="course">Select your course</label>
+  <select name="course" id="course" >
+  <option value="CSE">CSE</option>
+    <option value="ISE">ISE</option>
+      <option value="CSai">Csai</option>
+      </select>
+  <br><br>
+<!--button tag-->
+<button type="submit">Register</button> <br><br>
+<button type="reset">clear form</button>
 
 
 
+
+
+
+
+  </form>
 
 
 
