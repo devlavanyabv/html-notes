@@ -1,31 +1,33 @@
-h3{
-    background-color: rgb(89, 246, 246);
+.container{
+    background-color: antiquewhite;
+    display:flex;
+    flex-direction:row;
+    height:400px;
+    width:800px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:30px;
 }
-#first{
-    background-color: rgb(223, 53, 161);
+.box{
+    height:100px;
+    width:100px;
+    margin:10px;
 }
-.a{
-    background-color: rgb(240, 240, 47);
+.first{
+    background-color: orange;
+    flex-grow: 2;
+    flex-basis: 20px;
 }
-h1,.a,#first{
-    background-color: crimson;
+.second{
+    background-color: orangered;
+    flex-basis: 300px;;
 }
-h1{
-    font-size: 100px;
+.third{
+    background-color: aqua;
+    align-self: flex-start;
 }
-ol{
-    font-size: 20px;
-}
-ul{
-    font-size: 30px;
-}
-
-li{
-    font-size: 1em; 
-}
-html{
-    font-size: 20px;
-}
-h3{
-    font-size: 1rem;
+.fourth{
+    background-color: blueviolet;
+    align-self: flex-end;
 }
