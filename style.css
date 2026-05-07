@@ -1,6 +1,6 @@
 .container{
     background-color: antiquewhite;
-    display:flex;
+  
     flex-direction:row;
     height:400px;
     width:800px;
